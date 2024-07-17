@@ -6,12 +6,12 @@ Software translates MITRE's ATT&CK framework into a baysian node representation.
 
 
 ## Use
-
-1. Place .json files into the input directory
-2. Run `python JSONtoNET` in main directory
-3. Terminal will display whether the conversion was a success/failure
-4. If successful, output .net files will be available in the output directory, with copies of the original .json files in a backup sub-directory
-5. Graphical output of these .net files works best with Java-based UnBBayes applicaiton
+1. Install dependencies `pip install pgmpy`
+2. Place .json files into the input directory
+3. Run `python JSONtoNET` in main directory
+4. Terminal will display whether the conversion was a success/failure
+5. If successful, output .net files will be available in the output directory, with copies of the original .json files in a backup sub-directory
+6. Graphical output of these .net files works best with Java-based UnBBayes applicaiton
 
 Notes:
 * Software is distributed with three sample .json files for testing purposes, use the MITRE ATT&CK Navigator (https://mitre-attack.github.io/attack-navigator) to generate your own
