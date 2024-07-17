@@ -37,13 +37,13 @@ def JSONtoNET(model, filename):
         for node in model.nodes():
             if not topNode and model.get_parents(node):
                 topNode, lineBreak = True, True
-            if x > 2000 or lineBreak:
-                x, y2, lineBreak = np.random.randint(0, 250), y2 + 100, False
-            x += 250
-            y = y2 + 100 if offset else y2
+            if x > 1000 or lineBreak:
+                x, y2, lineBreak = np.random.randint(0, 100), y2 + 50, False
+            x += 150
+            y = y2 + 50 if offset else y2
             offset = not offset
             if node == risk:
-                x, y = 1000, y2 + 250
+                x, y = 500, y2 + 150
 
             # Write nodes to .net file
             f.write(f"node {node}\n{{\n    label = \"{node}\";\n    position = ({x} {y});\n    states = (\"False\" \"True\");\n}}\n")
