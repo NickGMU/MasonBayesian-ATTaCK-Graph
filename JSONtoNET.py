@@ -116,7 +116,7 @@ with open(stix_file, 'r') as f:
 # Set RiskProbability
 def setProb(score):
     if 0 <= score <= 100:
-        return score / 100.0
+        return 1-(score / 100.0)
     else:
         return 0.0
 
