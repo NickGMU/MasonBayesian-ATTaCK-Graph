@@ -115,7 +115,10 @@ with open(stix_file, 'r') as f:
 
 # Set RiskProbability
 def setProb(score):
-    return {1: 0.5, 2: 0.5, 3: 1.0}.get(score, 0.0)
+    if 0 <= score <= 100:
+        return score / 100.0
+    else:
+        return 0.0
 
 fileTokens = {}
 for obj in stix_data['objects']:
