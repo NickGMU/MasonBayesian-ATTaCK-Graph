@@ -13,7 +13,7 @@ logger.disabled = True
 directoryIn = "JSON Input Files"
 directoryOut = "NET Output Files"
 directoryBackup = os.path.join("NET Output Files", "JSON Backups")
-risk = "Risk"
+risk = "OverallRisk"
 
 # Create directories if they don't exist
 os.makedirs(directoryIn, exist_ok=True)
