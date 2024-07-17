@@ -2,7 +2,7 @@
 GMU CYSE-650 - Summer 2024 Project - Cyber Risk Modeling and Analysis Tools
 
 ## Overview
-Software translates MITRE's ATT&CK framework into a baysian node representation. Input files must be in .json format and conform to MITRE standards as of July 2024 (ATT&CK 15.1), Output files will be in a .net format.
+Software translates MITRE's ATT&CK framework into a bayesian node representation. Input files must be in .json format and conform to MITRE standards as of July 2024 (ATT&CK 15.1), Output files will be in a .net format.
 
 
 ## Use
